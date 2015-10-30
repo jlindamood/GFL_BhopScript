@@ -5,7 +5,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Bhop:
 *~$Space::
-Sleep 31
 Loop
 {
 
@@ -19,12 +18,6 @@ continue
 Sleep 31
 Send, {Blind}{Space}
 
-JumpsToSend = JumpsPerTick(3,6)
-
-Loop, %JumpsToSend% {
-Send, {Blind}{Space}
-Sleep 1
-}
 }
 
 
